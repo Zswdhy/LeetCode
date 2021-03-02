@@ -16,8 +16,14 @@ def func(n):
 
 if __name__ == '__main__':
     start = time.time()
-    res = func(200)
-    print(res)
+    # res = func(200)
+    # print(res)
     end = time.time()
 
     print(end - start)
+
+    a = 4
+    print(a << 3)
+
+    a = "2ba1"
+    print(a[0].isdecimal())
