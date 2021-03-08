@@ -12,4 +12,5 @@ def isPalindrome(x):
 
 if __name__ == '__main__':
     x = 121
-    print(isPalindrome(x))
+    res = isPalindrome(x)
+    print('结果', res)
