@@ -28,4 +28,4 @@ if __name__ == '__main__':
     path = ""
     ans = []
     res = child_sequence(s, 0, ans, path)
-    print('子串', res)
+    print('马士兵', res)
