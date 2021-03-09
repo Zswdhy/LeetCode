@@ -19,6 +19,7 @@ def demo(new_s, i):
         if i + 1 < len(new_s) and new_s[i + 1] >= '0' and new_s[i + 1] <= '6':
             res += demo(new_s, i + 2)
         return res
+    # new_s[i] '3' - '9'
     return demo(new_s, i + 1)
 
 
