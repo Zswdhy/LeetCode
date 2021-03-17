@@ -48,6 +48,10 @@ def longestCommonPrefix3(strs):
     return str0
 
 
+# hello  test
+
+# test
+
 if __name__ == '__main__':
     strs = ["cir", "car"]
     result = longestCommonPrefix(strs)
