@@ -48,6 +48,10 @@ def longestCommonPrefix3(strs):
     return str0
 
 
+def test():
+    print('hello')
+
+
 # hello  test
 
 # test
