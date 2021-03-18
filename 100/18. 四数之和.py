@@ -36,7 +36,7 @@ def fourSum2(nums, target):
                     while left < right and nums[right] == nums[right - 1]:
                         right -= 1
                     right -= 1
-                elif total < target:
+                if total < target:
                     left += 1
                 else:
                     right -= 1
