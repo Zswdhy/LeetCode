@@ -9,7 +9,7 @@ def coinChange(coins, amount):
             subproblem = dp(n - coin)
             if subproblem == -1:
                 continue
-            res = min(res, subproblem + 1)  # 符合条件每次 + 1
+            res = min(res, subproblem + 1)  # 符合条件每次 + 1，求最小值
 
         return res if res != float('INF') else -1
 
