@@ -9,6 +9,7 @@ def coinChange(coins, amount):
             subproblem = dp(n - coin)
             if subproblem == -1:
                 continue
+            # 状态转移方程，求最小值
             res = min(res, subproblem + 1)  # 符合条件每次 + 1，求最小值
 
         return res if res != float('INF') else -1
@@ -40,6 +41,7 @@ def process(weights, values, index, curWeight, bag):
     p2 = -1
     if p2Next != -1:
         p2 = p2Next + values[index]
+    # 状态转移方程，求最大值
     return max(p1, p2)
 
 
