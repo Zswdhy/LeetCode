@@ -33,8 +33,28 @@ def longestValidParentheses(s):
     return max_count
 
 
+def longest_valid_parent(string: str) -> int:
+    max_len = -1
+    stack = [-1, ]  # 防止栈为空的情况出现
+
+    for i in range(len(string)):
+        # 符合条件的左括号
+        if string[i] == '(':
+            stack.append(i)
+        # 直接出栈操作
+        else:
+            stack.pop()
+            # 栈不存在，将当前的索引值加入到栈内
+            if not stack:
+                stack.append(i)
+            # 判断当前最大的 max len
+            else:
+                max_len = max(max_len, i - stack[-1])
+    return max_len
+
+
 if __name__ == '__main__':
-    s = '((())'
+    s = ')(()(())'
     # s = ")()())"
     # s = "())(())"
 
@@ -43,7 +63,8 @@ if __name__ == '__main__':
     佛祖保佑，永无bug
     """
 
-
     res = longestValidParentheses(s)
+    res_2 = longest_valid_parent(s)
 
-    print(f'{s}内有效括号长度为：{res}')
+    print(f'func 1 {s} 内有效括号长度为：{res}')
+    print(f'func 2 {s} 内有效括号长度为：{res_2}')
