@@ -38,6 +38,11 @@ if __name__ == '__main__':
     # s = ")()())"
     # s = "())(())"
 
+    """
+    佛祖保佑，永无bug
+    """
+
+
     res = longestValidParentheses(s)
 
     print(f'{s}内有效括号长度为：{res}')
