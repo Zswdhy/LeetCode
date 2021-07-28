@@ -58,11 +58,6 @@ if __name__ == '__main__':
     # s = ")()())"
     # s = "())(())"
 
-    """
-    佛祖保佑，永无bug
-    佛祖保佑，永无bug
-    """
-
     res = longestValidParentheses(s)
     res_2 = longest_valid_parent(s)
 
