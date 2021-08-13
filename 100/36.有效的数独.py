@@ -42,4 +42,6 @@ if __name__ == '__main__':
         [".", ".", ".", ".", "8", ".", ".", "7", "9"]
     ]
 
+    master = "master"
+    print(f"I am in {master}")
     print(is_valid_sudoku(board))
