@@ -42,4 +42,7 @@ if __name__ == '__main__':
         [".", ".", ".", ".", "8", ".", ".", "7", "9"]
     ]
 
+    dev = "dev test"
+    print(f"I am in {dev}")
+
     print(is_valid_sudoku(board))
