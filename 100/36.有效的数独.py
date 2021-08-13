@@ -29,7 +29,6 @@ def is_valid_sudoku(board: list) -> bool:
 
 
 if __name__ == '__main__':
-    """hello,I am in dev"""
     board = [
         ["8", "3", ".", ".", "7", ".", ".", ".", "."],
         ["6", ".", ".", "1", "9", "5", ".", ".", "."],
@@ -41,8 +40,5 @@ if __name__ == '__main__':
         [".", ".", ".", "4", "1", "9", ".", ".", "5"],
         [".", ".", ".", ".", "8", ".", ".", "7", "9"]
     ]
-
-    dev = "dev test"
-    print(f"I am in {dev}")
 
     print(is_valid_sudoku(board))
