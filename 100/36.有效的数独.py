@@ -1,6 +1,7 @@
 def is_valid_sudoku(board: list) -> bool:
     """
-    根据输入的 9*9 数组 判断输入是的数字是否符合数独的规则，
+    根据输入的 9*9 数组 判断输入是的数字是否符合数独的规则
+    只需要检测每行每列以及每个块是否符合要求即可
     :param board: init array1
     :return: bool
     """
@@ -41,6 +42,4 @@ if __name__ == '__main__':
         [".", ".", ".", ".", "8", ".", ".", "7", "9"]
     ]
 
-    master = "master"
-    print(f"I am in {master}")
     print(is_valid_sudoku(board))
