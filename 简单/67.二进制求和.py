@@ -10,10 +10,7 @@ def addBinary(a: str, b: str) -> str:
         if a[i] == "0" and b[i - l_a] == "0":
             result_str[i - l_a] = result_str[i - l_a]
         elif a[i] == "1" and b[i - l_a] == "1":
-            if result_str[i - l_a] == 1:
-                result_str[i - l_a] = 1
-            else:
-                result_str[i - l_a] = 0
+            result_str[i - l_a] = result_str[i - l_a]
             result_str[i - l_a - 1] = 1
         else:
             if result_str[i - l_a] == 1:
