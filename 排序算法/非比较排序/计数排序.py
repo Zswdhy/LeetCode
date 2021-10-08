@@ -8,21 +8,16 @@
 
 
 def count_sort(ls):
-    min, max = ls[0], ls[0]
-    for item in ls:
-        if item < min:
-            min = item
-        elif item > max:
-            max = item
+    min_value, max_value = min(ls), max(ls)
 
-    res = [0 for i in range(min, max + 1)]
+    res = [0 for i in range(min_value, max_value + 1)]
 
     for item in ls:
-        res[item - min] += 1
+        res[item - min_value] += 1
     fin_res = []
     for i in range(len(res)):
         for j in range(res[i]):
-            fin_res.append(i + min)
+            fin_res.append(i + min_value)
     return fin_res
 
 
